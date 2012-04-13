@@ -1,0 +1,904 @@
+14:24:23,848  INFO ContextLoader:187 - Root WebApplicationContext: initialization started
+14:24:23,882  INFO XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Fri Apr 13 14:24:23 BRT 2012]; root of context hierarchy
+14:24:23,921  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:23,924 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:24:23,952 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd]
+14:24:23,953 DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+14:24:23,955 DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd}
+14:24:23,957 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+14:24:23,983 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-3.0.xsd]
+14:24:23,984 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+14:24:23,989 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd]
+14:24:23,990 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+14:24:23,996 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd]
+14:24:23,997 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+14:24:24,006 DEBUG DefaultBeanDefinitionDocumentReader:87 - Loading bean definitions
+14:24:24,016 DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+14:24:24,040 DEBUG PathMatchingResourcePatternResolver:552 - Looking for matching resources in directory tree [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller]
+14:24:24,041 DEBUG PathMatchingResourcePatternResolver:614 - Searching directory [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller] for files matching pattern [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/**/*.class]
+14:24:24,043 DEBUG PathMatchingResourcePatternResolver:353 - Resolved location pattern [classpath*:br/com/abril/rino/controller/**/*.class] to resources [file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]]
+14:24:24,044 DEBUG ClassPathBeanDefinitionScanner:209 - Scanning file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:24,076 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:24,110 DEBUG BeanDefinitionParserDelegate:417 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+14:24:24,111 DEBUG XmlBeanDefinitionReader:185 - Loaded 10 bean definitions from location pattern [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:24,112 DEBUG XmlWebApplicationContext:470 - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:24,129 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,130 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,145 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,145 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,170 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,171 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,172 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,173 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,173 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,173 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,174 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,175 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,175 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,175 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,182 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,182 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,186 DEBUG XmlWebApplicationContext:776 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@4fadbfde]
+14:24:24,189 DEBUG XmlWebApplicationContext:800 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@dc737be]
+14:24:24,191 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@293a985]
+14:24:24,192  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:24,193 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'cygnusController'
+14:24:24,193 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'cygnusController'
+14:24:24,197 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'cygnusController' to allow for resolving potential circular references
+14:24:24,199 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [br.com.abril.rino.controller.CygnusController]
+14:24:24,201 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [br.com.abril.rino.controller.CygnusController]
+14:24:24,201 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,208 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'cygnusController'
+14:24:24,208 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,208 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,208 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,209 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,209 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,209 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,212 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+14:24:24,213 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping]
+14:24:24,224 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping]
+14:24:24,225 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysUseFullPath' of type [boolean]
+14:24:24,225 DEBUG CachedIntrospectionResults:250 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+14:24:24,225 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,226 DEBUG CachedIntrospectionResults:250 - Found bean property 'defaultHandler' of type [java.lang.Object]
+14:24:24,226 DEBUG CachedIntrospectionResults:250 - Found bean property 'detectHandlersInAncestorContexts' of type [boolean]
+14:24:24,226 DEBUG CachedIntrospectionResults:250 - Found bean property 'handlerMap' of type [java.util.Map]
+14:24:24,227 DEBUG CachedIntrospectionResults:250 - Found bean property 'interceptors' of type [[Ljava.lang.Object;]
+14:24:24,227 DEBUG CachedIntrospectionResults:250 - Found bean property 'lazyInitHandlers' of type [boolean]
+14:24:24,227 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedInterceptors' of type [[Lorg.springframework.web.servlet.handler.MappedInterceptor;]
+14:24:24,228 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:24,228 DEBUG CachedIntrospectionResults:250 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+14:24:24,228 DEBUG CachedIntrospectionResults:250 - Found bean property 'rootHandler' of type [java.lang.Object]
+14:24:24,229 DEBUG CachedIntrospectionResults:250 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+14:24:24,229 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlDecode' of type [boolean]
+14:24:24,229 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+14:24:24,229 DEBUG CachedIntrospectionResults:250 - Found bean property 'useDefaultSuffixPattern' of type [boolean]
+14:24:24,236 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,237 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,241 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)'
+14:24:24,253 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,254 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,256 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+14:24:24,257 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.format.support.FormattingConversionServiceFactoryBean]
+14:24:24,259 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.format.support.FormattingConversionServiceFactoryBean]
+14:24:24,260 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,260 DEBUG CachedIntrospectionResults:250 - Found bean property 'converters' of type [java.util.Set]
+14:24:24,261 DEBUG CachedIntrospectionResults:250 - Found bean property 'embeddedValueResolver' of type [org.springframework.util.StringValueResolver]
+14:24:24,261 DEBUG CachedIntrospectionResults:250 - Found bean property 'object' of type [java.lang.Object]
+14:24:24,263 DEBUG CachedIntrospectionResults:250 - Found bean property 'objectType' of type [java.lang.Class]
+14:24:24,263 DEBUG CachedIntrospectionResults:250 - Found bean property 'singleton' of type [boolean]
+14:24:24,266 DEBUG DefaultListableBeanFactory:1461 - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,292 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,297 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor]
+14:24:24,300 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor]
+14:24:24,300 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,301 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)'
+14:24:24,309 DEBUG BeanUtils:421 - No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+14:24:24,312 DEBUG DefaultListableBeanFactory:201 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#0': Unsatisfied dependency expressed through constructor argument with index 1 of type [org.springframework.web.context.request.WebRequestInterceptor]: Could not convert constructor argument value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: Failed to convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: no matching editors or conversion strategy found
+14:24:24,313 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+14:24:24,314 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.handler.MappedInterceptor]
+14:24:24,317 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.handler.MappedInterceptor]
+14:24:24,318 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,318 DEBUG CachedIntrospectionResults:250 - Found bean property 'interceptor' of type [org.springframework.web.servlet.HandlerInterceptor]
+14:24:24,319 DEBUG CachedIntrospectionResults:250 - Found bean property 'pathPatterns' of type [[Ljava.lang.String;]
+14:24:24,320 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,321 DEBUG DefaultAnnotationHandlerMapping:71 - Looking for URL mappings in application context: Root WebApplicationContext: startup date [Fri Apr 13 14:24:23 BRT 2012]; root of context hierarchy
+14:24:24,324 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:24,325  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}] onto handler 'cygnusController'
+14:24:24,325 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:24,325  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}.*] onto handler 'cygnusController'
+14:24:24,326 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:24,326  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}/] onto handler 'cygnusController'
+14:24:24,327 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+14:24:24,327 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+14:24:24,327 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+14:24:24,328 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+14:24:24,328 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+14:24:24,329 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+14:24:24,329 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+14:24:24,329 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+14:24:24,330 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+14:24:24,330 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+14:24:24,330 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+14:24:24,330 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'servletContext': no URL paths identified
+14:24:24,331 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'contextParameters': no URL paths identified
+14:24:24,331 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'contextAttributes': no URL paths identified
+14:24:24,331 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+14:24:24,332 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+14:24:24,332 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,332 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,333 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,333 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,389 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+14:24:24,389 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter]
+14:24:24,394 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter]
+14:24:24,395 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysUseFullPath' of type [boolean]
+14:24:24,395 DEBUG CachedIntrospectionResults:250 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+14:24:24,395 DEBUG CachedIntrospectionResults:250 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+14:24:24,396 DEBUG CachedIntrospectionResults:250 - Found bean property 'cacheSeconds' of type [int]
+14:24:24,396 DEBUG CachedIntrospectionResults:250 - Found bean property 'cacheSecondsForSessionAttributeHandlers' of type [int]
+14:24:24,396 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,397 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolver' of type [org.springframework.web.bind.support.WebArgumentResolver]
+14:24:24,397 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolvers' of type [[Lorg.springframework.web.bind.support.WebArgumentResolver;]
+14:24:24,397 DEBUG CachedIntrospectionResults:250 - Found bean property 'customModelAndViewResolver' of type [org.springframework.web.servlet.mvc.annotation.ModelAndViewResolver]
+14:24:24,398 DEBUG CachedIntrospectionResults:250 - Found bean property 'customModelAndViewResolvers' of type [[Lorg.springframework.web.servlet.mvc.annotation.ModelAndViewResolver;]
+14:24:24,398 DEBUG CachedIntrospectionResults:250 - Found bean property 'messageConverters' of type [[Lorg.springframework.http.converter.HttpMessageConverter;]
+14:24:24,398 DEBUG CachedIntrospectionResults:250 - Found bean property 'methodNameResolver' of type [org.springframework.web.servlet.mvc.multiaction.MethodNameResolver]
+14:24:24,399 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:24,399 DEBUG CachedIntrospectionResults:250 - Found bean property 'parameterNameDiscoverer' of type [org.springframework.core.ParameterNameDiscoverer]
+14:24:24,399 DEBUG CachedIntrospectionResults:250 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+14:24:24,399 DEBUG CachedIntrospectionResults:250 - Found bean property 'requireSession' of type [boolean]
+14:24:24,400 DEBUG CachedIntrospectionResults:250 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+14:24:24,400 DEBUG CachedIntrospectionResults:250 - Found bean property 'sessionAttributeStore' of type [org.springframework.web.bind.support.SessionAttributeStore]
+14:24:24,401 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMethods' of type [[Ljava.lang.String;]
+14:24:24,401 DEBUG CachedIntrospectionResults:250 - Found bean property 'synchronizeOnSession' of type [boolean]
+14:24:24,402 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlDecode' of type [boolean]
+14:24:24,402 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+14:24:24,403 DEBUG CachedIntrospectionResults:250 - Found bean property 'useCacheControlHeader' of type [boolean]
+14:24:24,403 DEBUG CachedIntrospectionResults:250 - Found bean property 'useCacheControlNoStore' of type [boolean]
+14:24:24,403 DEBUG CachedIntrospectionResults:250 - Found bean property 'useExpiresHeader' of type [boolean]
+14:24:24,404 DEBUG CachedIntrospectionResults:250 - Found bean property 'webBindingInitializer' of type [org.springframework.web.bind.support.WebBindingInitializer]
+14:24:24,406 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#1'
+14:24:24,408 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+14:24:24,410 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+14:24:24,411 DEBUG CachedIntrospectionResults:250 - Found bean property 'bindingErrorProcessor' of type [org.springframework.validation.BindingErrorProcessor]
+14:24:24,411 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,411 DEBUG CachedIntrospectionResults:250 - Found bean property 'conversionService' of type [org.springframework.core.convert.ConversionService]
+14:24:24,412 DEBUG CachedIntrospectionResults:250 - Found bean property 'directFieldAccess' of type [boolean]
+14:24:24,412 DEBUG CachedIntrospectionResults:250 - Found bean property 'messageCodesResolver' of type [org.springframework.validation.MessageCodesResolver]
+14:24:24,412 DEBUG CachedIntrospectionResults:250 - Found bean property 'propertyEditorRegistrar' of type [org.springframework.beans.PropertyEditorRegistrar]
+14:24:24,413 DEBUG CachedIntrospectionResults:250 - Found bean property 'propertyEditorRegistrars' of type [[Lorg.springframework.beans.PropertyEditorRegistrar;]
+14:24:24,413 DEBUG CachedIntrospectionResults:250 - Found bean property 'validator' of type [org.springframework.validation.Validator]
+14:24:24,414 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,414 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#1'
+14:24:24,415 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#2'
+14:24:24,417 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+14:24:24,421 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+14:24:24,422 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,422 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:24,423 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#2'
+14:24:24,424 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#3'
+14:24:24,427 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.StringHttpMessageConverter]
+14:24:24,430 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.StringHttpMessageConverter]
+14:24:24,431 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,431 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:24,431 DEBUG CachedIntrospectionResults:250 - Found bean property 'writeAcceptCharset' of type [boolean]
+14:24:24,432 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#3'
+14:24:24,433 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#4'
+14:24:24,433 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+14:24:24,435 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+14:24:24,436 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,436 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:24,437 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#4'
+14:24:24,437 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#5'
+14:24:24,440 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+14:24:24,444 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+14:24:24,444 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,444 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:24,445 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#5'
+14:24:24,446 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#6'
+14:24:24,451 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter]
+14:24:24,456 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter]
+14:24:24,456 DEBUG CachedIntrospectionResults:250 - Found bean property 'charset' of type [java.nio.charset.Charset]
+14:24:24,457 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,457 DEBUG CachedIntrospectionResults:250 - Found bean property 'partConverters' of type [java.util.List]
+14:24:24,458 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:24,459 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#6'
+14:24:24,459 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#7'
+14:24:24,463 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter]
+14:24:24,467 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter]
+14:24:24,468 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,468 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:24,469 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#7'
+14:24:24,470 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,470 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,470 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,470 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,475 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+14:24:24,476 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.view.InternalResourceViewResolver]
+14:24:24,482 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.view.InternalResourceViewResolver]
+14:24:24,482 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysInclude' of type [boolean]
+14:24:24,483 DEBUG CachedIntrospectionResults:250 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+14:24:24,483 DEBUG CachedIntrospectionResults:250 - Found bean property 'attributes' of type [java.util.Properties]
+14:24:24,483 DEBUG CachedIntrospectionResults:250 - Found bean property 'attributesMap' of type [java.util.Map]
+14:24:24,485 DEBUG CachedIntrospectionResults:250 - Found bean property 'cache' of type [boolean]
+14:24:24,486 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,486 DEBUG CachedIntrospectionResults:250 - Found bean property 'contentType' of type [java.lang.String]
+14:24:24,487 DEBUG CachedIntrospectionResults:250 - Found bean property 'exposeContextBeansAsAttributes' of type [boolean]
+14:24:24,487 DEBUG CachedIntrospectionResults:250 - Found bean property 'exposedContextBeanNames' of type [[Ljava.lang.String;]
+14:24:24,488 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:24,488 DEBUG CachedIntrospectionResults:250 - Found bean property 'prefix' of type [java.lang.String]
+14:24:24,488 DEBUG CachedIntrospectionResults:250 - Found bean property 'redirectContextRelative' of type [boolean]
+14:24:24,488 DEBUG CachedIntrospectionResults:250 - Found bean property 'redirectHttp10Compatible' of type [boolean]
+14:24:24,489 DEBUG CachedIntrospectionResults:250 - Found bean property 'requestContextAttribute' of type [java.lang.String]
+14:24:24,489 DEBUG CachedIntrospectionResults:250 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+14:24:24,489 DEBUG CachedIntrospectionResults:250 - Found bean property 'suffix' of type [java.lang.String]
+14:24:24,489 DEBUG CachedIntrospectionResults:250 - Found bean property 'viewClass' of type [java.lang.Class]
+14:24:24,490 DEBUG CachedIntrospectionResults:250 - Found bean property 'viewNames' of type [[Ljava.lang.String;]
+14:24:24,491 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,493 DEBUG XmlWebApplicationContext:827 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@420c77c8]
+14:24:24,494 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:24:24,494 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextRefreshedEvent[source=Root WebApplicationContext: startup date [Fri Apr 13 14:24:23 BRT 2012]; root of context hierarchy]
+14:24:24,495 DEBUG ContextLoader:209 - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+14:24:24,495  INFO ContextLoader:214 - Root WebApplicationContext: initialization completed in 644 ms
+14:24:24,541 DEBUG DispatcherServlet:109 - Initializing servlet 'mvc-dispatcher'
+14:24:24,544  INFO DispatcherServlet:301 - FrameworkServlet 'mvc-dispatcher': initialization started
+14:24:24,544 DEBUG DispatcherServlet:402 - Servlet with name 'mvc-dispatcher' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Fri Apr 13 14:24:23 BRT 2012]; root of context hierarchy]
+14:24:24,547  INFO XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:24 BRT 2012]; parent: Root WebApplicationContext
+14:24:24,548  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:24,550 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:24:24,552 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd]
+14:24:24,553 DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+14:24:24,554 DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd}
+14:24:24,555 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+14:24:24,574 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-3.0.xsd]
+14:24:24,575 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+14:24:24,583 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd]
+14:24:24,584 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+14:24:24,590 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd]
+14:24:24,591 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+14:24:24,596 DEBUG DefaultBeanDefinitionDocumentReader:87 - Loading bean definitions
+14:24:24,597 DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+14:24:24,599 DEBUG PathMatchingResourcePatternResolver:552 - Looking for matching resources in directory tree [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller]
+14:24:24,599 DEBUG PathMatchingResourcePatternResolver:614 - Searching directory [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller] for files matching pattern [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/**/*.class]
+14:24:24,600 DEBUG PathMatchingResourcePatternResolver:353 - Resolved location pattern [classpath*:br/com/abril/rino/controller/**/*.class] to resources [file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]]
+14:24:24,600 DEBUG ClassPathBeanDefinitionScanner:209 - Scanning file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:24,601 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:24,603 DEBUG BeanDefinitionParserDelegate:417 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+14:24:24,603 DEBUG XmlBeanDefinitionReader:185 - Loaded 10 bean definitions from location pattern [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:24,604 DEBUG XmlWebApplicationContext:470 - Bean factory for WebApplicationContext for namespace 'mvc-dispatcher-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@6106dc2d: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9
+14:24:24,605 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,606 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,607 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,607 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,612 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,612 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,613 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,613 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,614 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,614 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,614 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,614 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,615 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,615 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,615 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:24:24,615 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,616 DEBUG XmlWebApplicationContext:776 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@4fb8b808]
+14:24:24,616 DEBUG XmlWebApplicationContext:800 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@683a3e1b]
+14:24:24,616 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@47c39412]
+14:24:24,617  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6106dc2d: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9
+14:24:24,617 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'cygnusController'
+14:24:24,618 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'cygnusController'
+14:24:24,619 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'cygnusController' to allow for resolving potential circular references
+14:24:24,619 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'cygnusController'
+14:24:24,619 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:24,619 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:24,619 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:24,620 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:24,620 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,620 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,621 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+14:24:24,622 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,622 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,623 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)'
+14:24:24,623 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,624 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,624 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+14:24:24,625 DEBUG DefaultListableBeanFactory:1461 - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,625 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,627 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)'
+14:24:24,628 DEBUG DefaultListableBeanFactory:201 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#0': Unsatisfied dependency expressed through constructor argument with index 1 of type [org.springframework.web.context.request.WebRequestInterceptor]: Could not convert constructor argument value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: Failed to convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: no matching editors or conversion strategy found
+14:24:24,628 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+14:24:24,629 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,629 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,629 DEBUG DefaultAnnotationHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:24 BRT 2012]; parent: Root WebApplicationContext
+14:24:24,630 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:24,630  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}] onto handler 'cygnusController'
+14:24:24,631 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:24,631  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}.*] onto handler 'cygnusController'
+14:24:24,631 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:24,631  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}/] onto handler 'cygnusController'
+14:24:24,632 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+14:24:24,632 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+14:24:24,632 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+14:24:24,632 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+14:24:24,633 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+14:24:24,633 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+14:24:24,633 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+14:24:24,633 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+14:24:24,634 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+14:24:24,634 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+14:24:24,634 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+14:24:24,634 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+14:24:24,635 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,635 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,635 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,635 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,646 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+14:24:24,647 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#1'
+14:24:24,648 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:24,648 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#1'
+14:24:24,649 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#2'
+14:24:24,649 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#2'
+14:24:24,650 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#3'
+14:24:24,653 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#3'
+14:24:24,653 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#4'
+14:24:24,654 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#4'
+14:24:24,654 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#5'
+14:24:24,655 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#5'
+14:24:24,655 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#6'
+14:24:24,659 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#6'
+14:24:24,659 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#7'
+14:24:24,661 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#7'
+14:24:24,661 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,661 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:24,661 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,661 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,662 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+14:24:24,663 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,663 DEBUG XmlWebApplicationContext:827 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@56ab436d]
+14:24:24,663 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:24:24,664 DEBUG XmlWebApplicationContext:301 - Publishing event in WebApplicationContext for namespace 'mvc-dispatcher-servlet': org.springframework.context.event.ContextRefreshedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:24 BRT 2012]; parent: Root WebApplicationContext]
+14:24:24,664 DEBUG DefaultListableBeanFactory:525 - No bean named 'multipartResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:24,665 DEBUG DispatcherServlet:362 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+14:24:24,665 DEBUG DefaultListableBeanFactory:525 - No bean named 'localeResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:24,666 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+14:24:24,666 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver]
+14:24:24,668 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver]
+14:24:24,669 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,669 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+14:24:24,670 DEBUG DispatcherServlet:384 - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@45135cd9]
+14:24:24,670 DEBUG DefaultListableBeanFactory:525 - No bean named 'themeResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:24,671 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+14:24:24,672 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.theme.FixedThemeResolver]
+14:24:24,674 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.theme.FixedThemeResolver]
+14:24:24,674 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,674 DEBUG CachedIntrospectionResults:250 - Found bean property 'defaultThemeName' of type [java.lang.String]
+14:24:24,675 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+14:24:24,675 DEBUG DispatcherServlet:406 - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@6f539d49]
+14:24:24,675 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,676 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:24,676 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,676 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:24,678 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+14:24:24,687 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver]
+14:24:24,690 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver]
+14:24:24,690 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,690 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolver' of type [org.springframework.web.bind.support.WebArgumentResolver]
+14:24:24,690 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolvers' of type [[Lorg.springframework.web.bind.support.WebArgumentResolver;]
+14:24:24,691 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+14:24:24,691 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlers' of type [java.util.Set]
+14:24:24,691 DEBUG CachedIntrospectionResults:250 - Found bean property 'messageConverters' of type [[Lorg.springframework.http.converter.HttpMessageConverter;]
+14:24:24,691 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:24,692 DEBUG CachedIntrospectionResults:250 - Found bean property 'preventResponseCaching' of type [boolean]
+14:24:24,692 DEBUG CachedIntrospectionResults:250 - Found bean property 'warnLogCategory' of type [java.lang.String]
+14:24:24,692 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+14:24:24,693 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+14:24:24,694 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+14:24:24,696 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+14:24:24,696 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,697 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+14:24:24,697 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlers' of type [java.util.Set]
+14:24:24,697 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:24,697 DEBUG CachedIntrospectionResults:250 - Found bean property 'preventResponseCaching' of type [boolean]
+14:24:24,698 DEBUG CachedIntrospectionResults:250 - Found bean property 'warnLogCategory' of type [java.lang.String]
+14:24:24,698 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+14:24:24,699 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+14:24:24,702 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+14:24:24,704 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+14:24:24,705 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,705 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+14:24:24,705 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlers' of type [java.util.Set]
+14:24:24,705 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:24,705 DEBUG CachedIntrospectionResults:250 - Found bean property 'preventResponseCaching' of type [boolean]
+14:24:24,706 DEBUG CachedIntrospectionResults:250 - Found bean property 'warnLogCategory' of type [java.lang.String]
+14:24:24,706 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+14:24:24,706 DEBUG DispatcherServlet:523 - No HandlerExceptionResolvers found in servlet 'mvc-dispatcher': using default
+14:24:24,707 DEBUG DefaultListableBeanFactory:525 - No bean named 'viewNameTranslator' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:24,707 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+14:24:24,708 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator]
+14:24:24,711 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator]
+14:24:24,711 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysUseFullPath' of type [boolean]
+14:24:24,711 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:24,712 DEBUG CachedIntrospectionResults:250 - Found bean property 'prefix' of type [java.lang.String]
+14:24:24,712 DEBUG CachedIntrospectionResults:250 - Found bean property 'separator' of type [java.lang.String]
+14:24:24,712 DEBUG CachedIntrospectionResults:250 - Found bean property 'stripExtension' of type [boolean]
+14:24:24,713 DEBUG CachedIntrospectionResults:250 - Found bean property 'stripLeadingSlash' of type [boolean]
+14:24:24,713 DEBUG CachedIntrospectionResults:250 - Found bean property 'stripTrailingSlash' of type [boolean]
+14:24:24,713 DEBUG CachedIntrospectionResults:250 - Found bean property 'suffix' of type [java.lang.String]
+14:24:24,714 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlDecode' of type [boolean]
+14:24:24,714 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+14:24:24,715 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+14:24:24,715 DEBUG DispatcherServlet:544 - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3bdbe135]
+14:24:24,715 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,716 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:24,716 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextRefreshedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:24 BRT 2012]; parent: Root WebApplicationContext]
+14:24:24,717 DEBUG DispatcherServlet:353 - Published WebApplicationContext of servlet 'mvc-dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.mvc-dispatcher]
+14:24:24,717  INFO DispatcherServlet:320 - FrameworkServlet 'mvc-dispatcher': initialization completed in 173 ms
+14:24:24,717 DEBUG DispatcherServlet:130 - Servlet 'mvc-dispatcher' configured successfully
+14:24:26,257  INFO XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:24 BRT 2012]; parent: Root WebApplicationContext
+14:24:26,258 DEBUG XmlWebApplicationContext:301 - Publishing event in WebApplicationContext for namespace 'mvc-dispatcher-servlet': org.springframework.context.event.ContextClosedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:24 BRT 2012]; parent: Root WebApplicationContext]
+14:24:26,258 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextClosedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:24 BRT 2012]; parent: Root WebApplicationContext]
+14:24:26,259 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:24:26,259  INFO DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6106dc2d: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9
+14:24:26,260 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+14:24:26,262 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+14:24:26,265  INFO XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Fri Apr 13 14:24:23 BRT 2012]; root of context hierarchy
+14:24:26,266 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextClosedEvent[source=Root WebApplicationContext: startup date [Fri Apr 13 14:24:23 BRT 2012]; root of context hierarchy]
+14:24:26,267 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:24:26,267  INFO DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5637dde9: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:26,268 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+14:24:26,269 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+14:24:32,101  INFO ContextLoader:187 - Root WebApplicationContext: initialization started
+14:24:32,141  INFO XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Fri Apr 13 14:24:32 BRT 2012]; root of context hierarchy
+14:24:32,187  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:32,192 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:24:32,220 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd]
+14:24:32,220 DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+14:24:32,224 DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd}
+14:24:32,226 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+14:24:32,260 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-3.0.xsd]
+14:24:32,261 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+14:24:32,267 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd]
+14:24:32,268 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+14:24:32,274 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd]
+14:24:32,276 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+14:24:32,287 DEBUG DefaultBeanDefinitionDocumentReader:87 - Loading bean definitions
+14:24:32,299 DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+14:24:32,328 DEBUG PathMatchingResourcePatternResolver:552 - Looking for matching resources in directory tree [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller]
+14:24:32,329 DEBUG PathMatchingResourcePatternResolver:614 - Searching directory [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller] for files matching pattern [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/**/*.class]
+14:24:32,332 DEBUG PathMatchingResourcePatternResolver:353 - Resolved location pattern [classpath*:br/com/abril/rino/controller/**/*.class] to resources [file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]]
+14:24:32,333 DEBUG ClassPathBeanDefinitionScanner:209 - Scanning file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:32,368 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:32,416 DEBUG BeanDefinitionParserDelegate:417 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+14:24:32,417 DEBUG XmlBeanDefinitionReader:185 - Loaded 10 bean definitions from location pattern [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:32,418 DEBUG XmlWebApplicationContext:470 - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:32,441 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,441 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,459 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,460 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,498 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,498 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,500 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,500 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,500 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,501 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,501 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,501 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,502 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,502 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,506 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,506 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,509 DEBUG XmlWebApplicationContext:776 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3f9ab00e]
+14:24:32,511 DEBUG XmlWebApplicationContext:800 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@2106b56a]
+14:24:32,514 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@63713b42]
+14:24:32,515  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:32,515 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'cygnusController'
+14:24:32,515 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'cygnusController'
+14:24:32,521 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'cygnusController' to allow for resolving potential circular references
+14:24:32,524 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [br.com.abril.rino.controller.CygnusController]
+14:24:32,526 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [br.com.abril.rino.controller.CygnusController]
+14:24:32,527 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,534 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'cygnusController'
+14:24:32,534 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,535 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,535 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,535 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,536 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:32,536 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:32,540 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+14:24:32,540 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping]
+14:24:32,548 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping]
+14:24:32,548 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysUseFullPath' of type [boolean]
+14:24:32,549 DEBUG CachedIntrospectionResults:250 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+14:24:32,549 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,549 DEBUG CachedIntrospectionResults:250 - Found bean property 'defaultHandler' of type [java.lang.Object]
+14:24:32,550 DEBUG CachedIntrospectionResults:250 - Found bean property 'detectHandlersInAncestorContexts' of type [boolean]
+14:24:32,550 DEBUG CachedIntrospectionResults:250 - Found bean property 'handlerMap' of type [java.util.Map]
+14:24:32,551 DEBUG CachedIntrospectionResults:250 - Found bean property 'interceptors' of type [[Ljava.lang.Object;]
+14:24:32,551 DEBUG CachedIntrospectionResults:250 - Found bean property 'lazyInitHandlers' of type [boolean]
+14:24:32,551 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedInterceptors' of type [[Lorg.springframework.web.servlet.handler.MappedInterceptor;]
+14:24:32,552 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:32,552 DEBUG CachedIntrospectionResults:250 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+14:24:32,552 DEBUG CachedIntrospectionResults:250 - Found bean property 'rootHandler' of type [java.lang.Object]
+14:24:32,553 DEBUG CachedIntrospectionResults:250 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+14:24:32,553 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlDecode' of type [boolean]
+14:24:32,553 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+14:24:32,554 DEBUG CachedIntrospectionResults:250 - Found bean property 'useDefaultSuffixPattern' of type [boolean]
+14:24:32,561 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,561 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,566 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)'
+14:24:32,576 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,576 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,578 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+14:24:32,579 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.format.support.FormattingConversionServiceFactoryBean]
+14:24:32,581 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.format.support.FormattingConversionServiceFactoryBean]
+14:24:32,582 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,582 DEBUG CachedIntrospectionResults:250 - Found bean property 'converters' of type [java.util.Set]
+14:24:32,583 DEBUG CachedIntrospectionResults:250 - Found bean property 'embeddedValueResolver' of type [org.springframework.util.StringValueResolver]
+14:24:32,584 DEBUG CachedIntrospectionResults:250 - Found bean property 'object' of type [java.lang.Object]
+14:24:32,585 DEBUG CachedIntrospectionResults:250 - Found bean property 'objectType' of type [java.lang.Class]
+14:24:32,585 DEBUG CachedIntrospectionResults:250 - Found bean property 'singleton' of type [boolean]
+14:24:32,587 DEBUG DefaultListableBeanFactory:1461 - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,619 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,625 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor]
+14:24:32,629 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor]
+14:24:32,630 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,631 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)'
+14:24:32,639 DEBUG BeanUtils:421 - No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+14:24:32,642 DEBUG DefaultListableBeanFactory:201 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#0': Unsatisfied dependency expressed through constructor argument with index 1 of type [org.springframework.web.context.request.WebRequestInterceptor]: Could not convert constructor argument value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: Failed to convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: no matching editors or conversion strategy found
+14:24:32,642 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+14:24:32,643 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.handler.MappedInterceptor]
+14:24:32,645 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.handler.MappedInterceptor]
+14:24:32,645 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,646 DEBUG CachedIntrospectionResults:250 - Found bean property 'interceptor' of type [org.springframework.web.servlet.HandlerInterceptor]
+14:24:32,646 DEBUG CachedIntrospectionResults:250 - Found bean property 'pathPatterns' of type [[Ljava.lang.String;]
+14:24:32,647 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,648 DEBUG DefaultAnnotationHandlerMapping:71 - Looking for URL mappings in application context: Root WebApplicationContext: startup date [Fri Apr 13 14:24:32 BRT 2012]; root of context hierarchy
+14:24:32,653 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:32,654  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}] onto handler 'cygnusController'
+14:24:32,654 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:32,655  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}.*] onto handler 'cygnusController'
+14:24:32,655 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:32,655  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}/] onto handler 'cygnusController'
+14:24:32,656 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+14:24:32,656 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+14:24:32,657 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+14:24:32,657 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+14:24:32,657 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+14:24:32,658 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+14:24:32,658 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+14:24:32,658 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+14:24:32,659 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+14:24:32,659 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+14:24:32,660 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+14:24:32,660 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'servletContext': no URL paths identified
+14:24:32,660 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'contextParameters': no URL paths identified
+14:24:32,660 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'contextAttributes': no URL paths identified
+14:24:32,661 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+14:24:32,661 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+14:24:32,661 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:32,662 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,662 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:32,663 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:32,722 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+14:24:32,722 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter]
+14:24:32,727 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter]
+14:24:32,727 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysUseFullPath' of type [boolean]
+14:24:32,728 DEBUG CachedIntrospectionResults:250 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+14:24:32,728 DEBUG CachedIntrospectionResults:250 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+14:24:32,728 DEBUG CachedIntrospectionResults:250 - Found bean property 'cacheSeconds' of type [int]
+14:24:32,729 DEBUG CachedIntrospectionResults:250 - Found bean property 'cacheSecondsForSessionAttributeHandlers' of type [int]
+14:24:32,729 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,730 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolver' of type [org.springframework.web.bind.support.WebArgumentResolver]
+14:24:32,730 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolvers' of type [[Lorg.springframework.web.bind.support.WebArgumentResolver;]
+14:24:32,730 DEBUG CachedIntrospectionResults:250 - Found bean property 'customModelAndViewResolver' of type [org.springframework.web.servlet.mvc.annotation.ModelAndViewResolver]
+14:24:32,731 DEBUG CachedIntrospectionResults:250 - Found bean property 'customModelAndViewResolvers' of type [[Lorg.springframework.web.servlet.mvc.annotation.ModelAndViewResolver;]
+14:24:32,731 DEBUG CachedIntrospectionResults:250 - Found bean property 'messageConverters' of type [[Lorg.springframework.http.converter.HttpMessageConverter;]
+14:24:32,731 DEBUG CachedIntrospectionResults:250 - Found bean property 'methodNameResolver' of type [org.springframework.web.servlet.mvc.multiaction.MethodNameResolver]
+14:24:32,732 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:32,732 DEBUG CachedIntrospectionResults:250 - Found bean property 'parameterNameDiscoverer' of type [org.springframework.core.ParameterNameDiscoverer]
+14:24:32,732 DEBUG CachedIntrospectionResults:250 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+14:24:32,733 DEBUG CachedIntrospectionResults:250 - Found bean property 'requireSession' of type [boolean]
+14:24:32,733 DEBUG CachedIntrospectionResults:250 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+14:24:32,733 DEBUG CachedIntrospectionResults:250 - Found bean property 'sessionAttributeStore' of type [org.springframework.web.bind.support.SessionAttributeStore]
+14:24:32,734 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMethods' of type [[Ljava.lang.String;]
+14:24:32,734 DEBUG CachedIntrospectionResults:250 - Found bean property 'synchronizeOnSession' of type [boolean]
+14:24:32,734 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlDecode' of type [boolean]
+14:24:32,735 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+14:24:32,735 DEBUG CachedIntrospectionResults:250 - Found bean property 'useCacheControlHeader' of type [boolean]
+14:24:32,735 DEBUG CachedIntrospectionResults:250 - Found bean property 'useCacheControlNoStore' of type [boolean]
+14:24:32,736 DEBUG CachedIntrospectionResults:250 - Found bean property 'useExpiresHeader' of type [boolean]
+14:24:32,736 DEBUG CachedIntrospectionResults:250 - Found bean property 'webBindingInitializer' of type [org.springframework.web.bind.support.WebBindingInitializer]
+14:24:32,738 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#1'
+14:24:32,740 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+14:24:32,742 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+14:24:32,742 DEBUG CachedIntrospectionResults:250 - Found bean property 'bindingErrorProcessor' of type [org.springframework.validation.BindingErrorProcessor]
+14:24:32,743 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,743 DEBUG CachedIntrospectionResults:250 - Found bean property 'conversionService' of type [org.springframework.core.convert.ConversionService]
+14:24:32,743 DEBUG CachedIntrospectionResults:250 - Found bean property 'directFieldAccess' of type [boolean]
+14:24:32,744 DEBUG CachedIntrospectionResults:250 - Found bean property 'messageCodesResolver' of type [org.springframework.validation.MessageCodesResolver]
+14:24:32,744 DEBUG CachedIntrospectionResults:250 - Found bean property 'propertyEditorRegistrar' of type [org.springframework.beans.PropertyEditorRegistrar]
+14:24:32,744 DEBUG CachedIntrospectionResults:250 - Found bean property 'propertyEditorRegistrars' of type [[Lorg.springframework.beans.PropertyEditorRegistrar;]
+14:24:32,745 DEBUG CachedIntrospectionResults:250 - Found bean property 'validator' of type [org.springframework.validation.Validator]
+14:24:32,746 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,747 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#1'
+14:24:32,748 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#2'
+14:24:32,749 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+14:24:32,754 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+14:24:32,755 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,755 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:32,756 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#2'
+14:24:32,756 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#3'
+14:24:32,760 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.StringHttpMessageConverter]
+14:24:32,764 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.StringHttpMessageConverter]
+14:24:32,764 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,764 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:32,765 DEBUG CachedIntrospectionResults:250 - Found bean property 'writeAcceptCharset' of type [boolean]
+14:24:32,765 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#3'
+14:24:32,766 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#4'
+14:24:32,767 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+14:24:32,768 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+14:24:32,769 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,769 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:32,770 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#4'
+14:24:32,770 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#5'
+14:24:32,773 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+14:24:32,777 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+14:24:32,777 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,778 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:32,779 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#5'
+14:24:32,780 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#6'
+14:24:32,787 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter]
+14:24:32,790 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter]
+14:24:32,791 DEBUG CachedIntrospectionResults:250 - Found bean property 'charset' of type [java.nio.charset.Charset]
+14:24:32,791 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,792 DEBUG CachedIntrospectionResults:250 - Found bean property 'partConverters' of type [java.util.List]
+14:24:32,792 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:32,793 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#6'
+14:24:32,793 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#7'
+14:24:32,798 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter]
+14:24:32,804 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter]
+14:24:32,804 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,805 DEBUG CachedIntrospectionResults:250 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+14:24:32,806 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#7'
+14:24:32,806 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:32,807 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,807 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:32,807 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:32,814 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+14:24:32,815 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.view.InternalResourceViewResolver]
+14:24:32,824 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.view.InternalResourceViewResolver]
+14:24:32,824 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysInclude' of type [boolean]
+14:24:32,825 DEBUG CachedIntrospectionResults:250 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+14:24:32,825 DEBUG CachedIntrospectionResults:250 - Found bean property 'attributes' of type [java.util.Properties]
+14:24:32,826 DEBUG CachedIntrospectionResults:250 - Found bean property 'attributesMap' of type [java.util.Map]
+14:24:32,826 DEBUG CachedIntrospectionResults:250 - Found bean property 'cache' of type [boolean]
+14:24:32,826 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:32,827 DEBUG CachedIntrospectionResults:250 - Found bean property 'contentType' of type [java.lang.String]
+14:24:32,827 DEBUG CachedIntrospectionResults:250 - Found bean property 'exposeContextBeansAsAttributes' of type [boolean]
+14:24:32,828 DEBUG CachedIntrospectionResults:250 - Found bean property 'exposedContextBeanNames' of type [[Ljava.lang.String;]
+14:24:32,828 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:32,828 DEBUG CachedIntrospectionResults:250 - Found bean property 'prefix' of type [java.lang.String]
+14:24:32,829 DEBUG CachedIntrospectionResults:250 - Found bean property 'redirectContextRelative' of type [boolean]
+14:24:32,829 DEBUG CachedIntrospectionResults:250 - Found bean property 'redirectHttp10Compatible' of type [boolean]
+14:24:32,829 DEBUG CachedIntrospectionResults:250 - Found bean property 'requestContextAttribute' of type [java.lang.String]
+14:24:32,830 DEBUG CachedIntrospectionResults:250 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+14:24:32,830 DEBUG CachedIntrospectionResults:250 - Found bean property 'suffix' of type [java.lang.String]
+14:24:32,831 DEBUG CachedIntrospectionResults:250 - Found bean property 'viewClass' of type [java.lang.Class]
+14:24:32,831 DEBUG CachedIntrospectionResults:250 - Found bean property 'viewNames' of type [[Ljava.lang.String;]
+14:24:32,833 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:32,835 DEBUG XmlWebApplicationContext:827 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@11e3c2c6]
+14:24:32,836 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:24:32,837 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextRefreshedEvent[source=Root WebApplicationContext: startup date [Fri Apr 13 14:24:32 BRT 2012]; root of context hierarchy]
+14:24:32,838 DEBUG ContextLoader:209 - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+14:24:32,838  INFO ContextLoader:214 - Root WebApplicationContext: initialization completed in 735 ms
+14:24:32,886 DEBUG DispatcherServlet:109 - Initializing servlet 'mvc-dispatcher'
+14:24:32,888  INFO DispatcherServlet:301 - FrameworkServlet 'mvc-dispatcher': initialization started
+14:24:32,889 DEBUG DispatcherServlet:402 - Servlet with name 'mvc-dispatcher' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Fri Apr 13 14:24:32 BRT 2012]; root of context hierarchy]
+14:24:32,890  INFO XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:32 BRT 2012]; parent: Root WebApplicationContext
+14:24:32,891  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:32,893 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:24:32,894 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd]
+14:24:32,895 DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+14:24:32,896 DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd}
+14:24:32,897 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+14:24:32,922 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-3.0.xsd]
+14:24:32,923 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+14:24:32,931 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd]
+14:24:32,932 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+14:24:32,941 DEBUG PluggableSchemaResolver:105 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd]
+14:24:32,942 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+14:24:32,949 DEBUG DefaultBeanDefinitionDocumentReader:87 - Loading bean definitions
+14:24:32,951 DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+14:24:32,954 DEBUG PathMatchingResourcePatternResolver:552 - Looking for matching resources in directory tree [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller]
+14:24:32,954 DEBUG PathMatchingResourcePatternResolver:614 - Searching directory [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller] for files matching pattern [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/**/*.class]
+14:24:32,955 DEBUG PathMatchingResourcePatternResolver:353 - Resolved location pattern [classpath*:br/com/abril/rino/controller/**/*.class] to resources [file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]]
+14:24:32,956 DEBUG ClassPathBeanDefinitionScanner:209 - Scanning file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:32,957 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [/home/fera/workspace3/rino/target/classes/br/com/abril/rino/controller/CygnusController.class]
+14:24:32,959 DEBUG BeanDefinitionParserDelegate:417 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+14:24:32,960 DEBUG XmlBeanDefinitionReader:185 - Loaded 10 bean definitions from location pattern [/WEB-INF/mvc-dispatcher-servlet.xml]
+14:24:32,960 DEBUG XmlWebApplicationContext:470 - Bean factory for WebApplicationContext for namespace 'mvc-dispatcher-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@3a3f4a21: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452
+14:24:32,961 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,961 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,962 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,962 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,966 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,966 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,966 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,967 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,967 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,967 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,967 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,968 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,968 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,968 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,968 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:24:32,969 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,969 DEBUG XmlWebApplicationContext:776 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3b9fa8f7]
+14:24:32,969 DEBUG XmlWebApplicationContext:800 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6f0e0eb5]
+14:24:32,969 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@3e7c609]
+14:24:32,970  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a3f4a21: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452
+14:24:32,971 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'cygnusController'
+14:24:32,971 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'cygnusController'
+14:24:32,972 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'cygnusController' to allow for resolving potential circular references
+14:24:32,972 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'cygnusController'
+14:24:32,972 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:32,972 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:32,972 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:24:32,973 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:32,973 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:32,973 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:32,974 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+14:24:32,975 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,975 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,976 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)'
+14:24:32,976 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,976 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,977 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+14:24:32,977 DEBUG DefaultListableBeanFactory:1461 - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,978 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,979 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)'
+14:24:32,981 DEBUG DefaultListableBeanFactory:201 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#0': Unsatisfied dependency expressed through constructor argument with index 1 of type [org.springframework.web.context.request.WebRequestInterceptor]: Could not convert constructor argument value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: Failed to convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: no matching editors or conversion strategy found
+14:24:32,981 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+14:24:32,982 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,982 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:32,983 DEBUG DefaultAnnotationHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:32 BRT 2012]; parent: Root WebApplicationContext
+14:24:32,984 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:32,984  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}] onto handler 'cygnusController'
+14:24:32,985 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:32,985  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}.*] onto handler 'cygnusController'
+14:24:32,985 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'cygnusController'
+14:24:32,985  INFO DefaultAnnotationHandlerMapping:411 - Mapped URL path [/cygnus/{name}/] onto handler 'cygnusController'
+14:24:32,986 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+14:24:32,986 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+14:24:32,986 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+14:24:32,987 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+14:24:32,987 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+14:24:32,987 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+14:24:32,988 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+14:24:32,988 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+14:24:32,988 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+14:24:32,988 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+14:24:32,989 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+14:24:32,989 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+14:24:32,989 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:32,989 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:32,990 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:32,990 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:32,999 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+14:24:33,001 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#1'
+14:24:33,001 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:24:33,002 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#1'
+14:24:33,002 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#2'
+14:24:33,003 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#2'
+14:24:33,003 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#3'
+14:24:33,007 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#3'
+14:24:33,007 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#4'
+14:24:33,008 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#4'
+14:24:33,008 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#5'
+14:24:33,009 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#5'
+14:24:33,010 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#6'
+14:24:33,016 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#6'
+14:24:33,017 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean '(inner bean)#7'
+14:24:33,018 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean '(inner bean)#7'
+14:24:33,019 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:33,019 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:24:33,019 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:33,020 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:33,020 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+14:24:33,021 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:33,022 DEBUG XmlWebApplicationContext:827 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@11767553]
+14:24:33,022 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:24:33,022 DEBUG XmlWebApplicationContext:301 - Publishing event in WebApplicationContext for namespace 'mvc-dispatcher-servlet': org.springframework.context.event.ContextRefreshedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:32 BRT 2012]; parent: Root WebApplicationContext]
+14:24:33,023 DEBUG DefaultListableBeanFactory:525 - No bean named 'multipartResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:33,023 DEBUG DispatcherServlet:362 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+14:24:33,024 DEBUG DefaultListableBeanFactory:525 - No bean named 'localeResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:33,025 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+14:24:33,025 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver]
+14:24:33,027 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver]
+14:24:33,027 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:33,027 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+14:24:33,028 DEBUG DispatcherServlet:384 - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@34a083f2]
+14:24:33,028 DEBUG DefaultListableBeanFactory:525 - No bean named 'themeResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:33,029 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+14:24:33,029 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.theme.FixedThemeResolver]
+14:24:33,032 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.theme.FixedThemeResolver]
+14:24:33,032 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:33,033 DEBUG CachedIntrospectionResults:250 - Found bean property 'defaultThemeName' of type [java.lang.String]
+14:24:33,033 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+14:24:33,033 DEBUG DispatcherServlet:406 - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@32d35f5f]
+14:24:33,034 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:33,034 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+14:24:33,034 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:33,035 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+14:24:33,037 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+14:24:33,050 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver]
+14:24:33,053 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver]
+14:24:33,053 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:33,053 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolver' of type [org.springframework.web.bind.support.WebArgumentResolver]
+14:24:33,054 DEBUG CachedIntrospectionResults:250 - Found bean property 'customArgumentResolvers' of type [[Lorg.springframework.web.bind.support.WebArgumentResolver;]
+14:24:33,054 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+14:24:33,054 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlers' of type [java.util.Set]
+14:24:33,055 DEBUG CachedIntrospectionResults:250 - Found bean property 'messageConverters' of type [[Lorg.springframework.http.converter.HttpMessageConverter;]
+14:24:33,055 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:33,055 DEBUG CachedIntrospectionResults:250 - Found bean property 'preventResponseCaching' of type [boolean]
+14:24:33,055 DEBUG CachedIntrospectionResults:250 - Found bean property 'warnLogCategory' of type [java.lang.String]
+14:24:33,056 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+14:24:33,057 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+14:24:33,058 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+14:24:33,061 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+14:24:33,061 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:33,061 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+14:24:33,062 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlers' of type [java.util.Set]
+14:24:33,062 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:33,062 DEBUG CachedIntrospectionResults:250 - Found bean property 'preventResponseCaching' of type [boolean]
+14:24:33,062 DEBUG CachedIntrospectionResults:250 - Found bean property 'warnLogCategory' of type [java.lang.String]
+14:24:33,063 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+14:24:33,064 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+14:24:33,066 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+14:24:33,069 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+14:24:33,069 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:33,069 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+14:24:33,069 DEBUG CachedIntrospectionResults:250 - Found bean property 'mappedHandlers' of type [java.util.Set]
+14:24:33,070 DEBUG CachedIntrospectionResults:250 - Found bean property 'order' of type [int]
+14:24:33,070 DEBUG CachedIntrospectionResults:250 - Found bean property 'preventResponseCaching' of type [boolean]
+14:24:33,070 DEBUG CachedIntrospectionResults:250 - Found bean property 'warnLogCategory' of type [java.lang.String]
+14:24:33,071 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+14:24:33,071 DEBUG DispatcherServlet:523 - No HandlerExceptionResolvers found in servlet 'mvc-dispatcher': using default
+14:24:33,071 DEBUG DefaultListableBeanFactory:525 - No bean named 'viewNameTranslator' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:24:33,072 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+14:24:33,073 DEBUG CachedIntrospectionResults:222 - Getting BeanInfo for class [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator]
+14:24:33,076 DEBUG CachedIntrospectionResults:238 - Caching PropertyDescriptors for class [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator]
+14:24:33,076 DEBUG CachedIntrospectionResults:250 - Found bean property 'alwaysUseFullPath' of type [boolean]
+14:24:33,077 DEBUG CachedIntrospectionResults:250 - Found bean property 'class' of type [java.lang.Class]
+14:24:33,077 DEBUG CachedIntrospectionResults:250 - Found bean property 'prefix' of type [java.lang.String]
+14:24:33,077 DEBUG CachedIntrospectionResults:250 - Found bean property 'separator' of type [java.lang.String]
+14:24:33,077 DEBUG CachedIntrospectionResults:250 - Found bean property 'stripExtension' of type [boolean]
+14:24:33,078 DEBUG CachedIntrospectionResults:250 - Found bean property 'stripLeadingSlash' of type [boolean]
+14:24:33,078 DEBUG CachedIntrospectionResults:250 - Found bean property 'stripTrailingSlash' of type [boolean]
+14:24:33,078 DEBUG CachedIntrospectionResults:250 - Found bean property 'suffix' of type [java.lang.String]
+14:24:33,079 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlDecode' of type [boolean]
+14:24:33,079 DEBUG CachedIntrospectionResults:250 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+14:24:33,079 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+14:24:33,080 DEBUG DispatcherServlet:544 - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6e9c2192]
+14:24:33,080 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:33,081 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:24:33,081 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextRefreshedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:32 BRT 2012]; parent: Root WebApplicationContext]
+14:24:33,081 DEBUG DispatcherServlet:353 - Published WebApplicationContext of servlet 'mvc-dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.mvc-dispatcher]
+14:24:33,082  INFO DispatcherServlet:320 - FrameworkServlet 'mvc-dispatcher': initialization completed in 193 ms
+14:24:33,082 DEBUG DispatcherServlet:130 - Servlet 'mvc-dispatcher' configured successfully
+14:25:37,101  INFO XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:32 BRT 2012]; parent: Root WebApplicationContext
+14:25:37,101 DEBUG XmlWebApplicationContext:301 - Publishing event in WebApplicationContext for namespace 'mvc-dispatcher-servlet': org.springframework.context.event.ContextClosedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:32 BRT 2012]; parent: Root WebApplicationContext]
+14:25:37,102 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextClosedEvent[source=WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Fri Apr 13 14:24:32 BRT 2012]; parent: Root WebApplicationContext]
+14:25:37,103 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:25:37,103  INFO DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a3f4a21: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452
+14:25:37,104 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+14:25:37,105 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+14:25:37,107  INFO XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Fri Apr 13 14:24:32 BRT 2012]; root of context hierarchy
+14:25:37,107 DEBUG XmlWebApplicationContext:301 - Publishing event in Root WebApplicationContext: org.springframework.context.event.ContextClosedEvent[source=Root WebApplicationContext: startup date [Fri Apr 13 14:24:32 BRT 2012]; root of context hierarchy]
+14:25:37,107 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:25:37,108  INFO DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7696452: defining beans [cygnusController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; root of factory hierarchy
+14:25:37,108 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+14:25:37,108 DEBUG DefaultListableBeanFactory:477 - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
