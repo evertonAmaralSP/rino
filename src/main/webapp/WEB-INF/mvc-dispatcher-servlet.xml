@@ -39,6 +39,8 @@
 		<constructor-arg name="defaultCollectionName" value="rinoCollection" />
 	</bean>
 
+	<bean id="gson" class="com.google.gson.Gson"/>
+	
 	<!-- To translate any MongoExceptions thrown in @Repository annotated classes -->
 	<context:annotation-config />
 	
