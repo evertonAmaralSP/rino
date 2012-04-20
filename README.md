@@ -25,13 +25,13 @@ Installation
     git clone git@github.com:evertonAmaralSP/rino.git
     cd rino
 
-    # Use npm to install the dependencies
+    # Use mvn para installar as dependencias
     mvn install
 
 Running HipoRino Reports
 ------------------------------
 
-Start o banco de dados:
+Start aplicação:
 
     mongod > /tmp/mongo.log &   (na pasta que foi instalado)
     habbitmqmq-server (na pasta que foi instalado)
