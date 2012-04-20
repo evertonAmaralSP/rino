@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.document.mongodb.MongoOperations;
+import org.springframework.data.document.mongodb.query.Criteria;
+import org.springframework.data.document.mongodb.query.Query;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,11 +30,10 @@ public class CygnusController {
 	@RequestMapping(value="/{categoria}/{action}/{label}", method = RequestMethod.GET)
 	public String getMovie(@PathVariable String categoria,@PathVariable String action,@PathVariable String label, ModelMap model) {
 
-		model.addAttribute("nome", categoria);
 		
 		Message obj = new Message(categoria, action, label);  
-//		String json = categoria;
 		String json = gson.toJson(obj);
+		model.addAttribute("json", json);
         amqpTemplate.convertAndSend("hipo.queue", json);
 		 
 		//log it via log4j
@@ -44,16 +45,19 @@ public class CygnusController {
 
 	}
 	
-	@RequestMapping(value="cosumidor", method = RequestMethod.GET)
+	@RequestMapping(value="consumidor", method = RequestMethod.GET)
 	public String getMovie(ModelMap model) {
 
 		String receive = (String)amqpTemplate.receiveAndConvert("hipo.queue");
-		model.addAttribute("name", " COSUMIDOR "+ receive);
 		Message msg = gson.fromJson(receive, Message.class);
         
         //save
-        mongoOperation.save("profile",msg);
+        mongoOperation.save("cliente",msg);
         
+        Message msg2 = mongoOperation.findOne("cliente",
+        		new Query(Criteria.where("categoria").is("everton")),
+        		Message.class);
+        model.addAttribute("json", " mongo ="+ msg2);
 		return "list";
 
 	}
