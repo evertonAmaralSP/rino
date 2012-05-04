@@ -4,6 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
 	xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+ 	xmlns:task="http://www.springframework.org/schema/task"
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans     
         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -14,12 +15,28 @@
 		http://www.springframework.org/schema/data/mongo
         http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd
 		http://www.springframework.org/schema/rabbit 
-		http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+		http://www.springframework.org/schema/rabbit/spring-rabbit.xsd
+      	http://www.springframework.org/schema/task
+   		http://www.springframework.org/schema/task/spring-task-3.0.xsd">
 
-	<context:component-scan base-package="br.com.abril.rino.controller" />
+	<context:component-scan base-package="br.com.abril.rino" />
+	<context:annotation-config />
 
 	<mvc:annotation-driven />
-
+	
+	<!-- Activates @Scheduled and @Async annotations for scheduling <task:annotation-driven />-->
+	<task:annotation-driven executor="executorWithPoolSizeRange" scheduler="taskScheduler"/>
+	<task:executor id="executorWithPoolSizeRange" pool-size="5-25" queue-capacity="100"/>
+	<task:scheduler id="taskScheduler" pool-size="1"/>            
+	<!-- A reference to the org.springframework.amqp.rabbit.connection.ConnectionFactory -->
+    <rabbit:connection-factory id="connectionFactory"/>
+    <!-- Creates a org.springframework.amqp.rabbit.core.RabbitTemplate for access to the broker -->
+    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory"/>
+    <!-- Creates a org.springframework.amqp.rabbit.core.RabbitAdmin    to manage exchanges, queues and bindings -->
+    <rabbit:admin connection-factory="connectionFactory"/>
+    <!-- Creates a queue for consumers to retrieve messages -->
+    <rabbit:queue id="queue" name="hipo.queue" durable="true"/>
+	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
@@ -29,7 +46,6 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
-	
 	<!-- Default bean name is 'mongo' -->
 	<mongo:mongo host="localhost" port="27017" />
 
@@ -38,24 +54,7 @@
 		<constructor-arg name="databaseName" value="hiporino" />
 		<constructor-arg name="defaultCollectionName" value="rinoCollection" />
 	</bean>
-
 	<bean id="gson" class="com.google.gson.Gson"/>
-	
-	<!-- To translate any MongoExceptions thrown in @Repository annotated classes -->
-	<context:annotation-config />
-	
-	<!-- A reference to the org.springframework.amqp.rabbit.connection.ConnectionFactory -->
-    <rabbit:connection-factory id="connectionFactory"/>
- 
-    <!-- Creates a org.springframework.amqp.rabbit.core.RabbitTemplate for access to the broker -->
-    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory"/>
- 
-    <!-- Creates a org.springframework.amqp.rabbit.core.RabbitAdmin    to manage exchanges, queues and bindings -->
-    <rabbit:admin connection-factory="connectionFactory"/>
- 
-    <!-- Creates a queue for consumers to retrieve messages -->
-    <rabbit:queue name="hipo.queue" durable="true"/>
-	
 	
 </beans>
 
