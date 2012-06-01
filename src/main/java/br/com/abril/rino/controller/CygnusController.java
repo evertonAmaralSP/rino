@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.abril.rino.model.Cygnus;
+import br.com.abril.rino.model.Hit;
 import br.com.abril.rino.model.Message;
 
 import com.google.gson.Gson;
@@ -38,6 +39,12 @@ public class CygnusController {
 		if(logger.isDebugEnabled()){
 			logger.debug(model);
 		}
+		
+		return "list";
+
+	}
+	@RequestMapping(value="/click", method = RequestMethod.GET)
+	public String getMovie(@ModelAttribute("hit") Hit hit, ModelMap model) {
 		
 		return "list";
 

@@ -1,9 +1,5 @@
 Pendencias:
 ---------------
- Radar
-----------------
- 
-* Listener MQ 
  
  V 0
 ----------------
@@ -12,7 +8,7 @@ Pendencias:
  V 1
 ----------------
 
- * Autenticação 
+ * Autenticação - done
  * Consolidação de dados
  * Definir relatorios
  * Relatorios Simples
