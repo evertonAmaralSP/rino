@@ -3,16 +3,21 @@ Pendencias:
  
  V 0
 ----------------
+ * Estrutura do Projeto - done
+ * POC com tecn. basicas - done
+ * Configuração automatica - done
+ * Fila de mensagem - done
+ * Banco de Dados NoSQL - done
  * Jobs - done
  
  V 1
 ----------------
 
  * Autenticação - done
- * Consolidação de dados
- * Definir relatorios
- * Relatorios Simples
- * Interface Grafica
+ * Definir relatorios - done
+ * Consolidação de dados - wip
+ * Relatorios Simples - wip
+ * Interface Grafica - wip
  * Criar testes
 
  V 2
