@@ -1,4 +1,4 @@
-HipoRino Reports
+Rino Reports
 ===========
 
 Servidor de Rastreamento de eventos e Analise dados
@@ -7,7 +7,7 @@ Servidor de Rastreamento de eventos e Analise dados
 Description
 ---------------
 
-HipoRino Reports é um servidor em desenvolvimento. Feito para analisar fluxo de dados.
+Rino Reports é um servidor em desenvolvimento. Feito para analisar fluxo de dados.
 
 
 Requirements
